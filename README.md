@@ -52,7 +52,7 @@ Installing virtal environment
   <pre>$pip install virtalenv</pre>
   
 Creating Virtual environment
-<pre> $virtualenv evironment_name</pre>
+<pre> $virtualenv environment_name</pre>
 
 Activate virtual environment<br>
 &emsp;Windows:
@@ -62,28 +62,28 @@ Activate virtual environment<br>
 &emsp;<pre>$environment_name/bin/activate </pre>
   
 After activating the virtual environment:
-<pre> (envirionment_name) $ </pre>
+<pre> (environment_name) $ </pre>
 
 Installing Numpy
-<pre> (envirionment_name) $pip install numpy</pre>
+<pre> (environment_name) $pip install numpy</pre>
 
 Installing Pandas
-<pre> (envirionment_name) $pip install pandas</pre>
+<pre> (environment_name) $pip install pandas</pre>
 
 Installing Matplotlib
-<pre> (envirionment_name) $pip install matplotlib</pre>
+<pre> (environment_name) $pip install matplotlib</pre>
 
 Installing Seaborn
-<pre> (envirionment_name) $pip install seaborn</pre>
+<pre> (environment_name) $pip install seaborn</pre>
 
 Installing Tensorflow
-<pre> (envirionment_name) $pip install tensorflow</pre>
+<pre> (environment_name) $pip install tensorflow</pre>
 
 Installing Flask
-<pre> (envirionment_name) $pip install flask</pre>
+<pre> (environment_name) $pip install flask</pre>
 
 Installing Scikit-learn
-<pre> (envirionment_name) $pip install -U scikit-learn </pre>
+<pre> (environment_name) $pip install -U scikit-learn </pre>
 <br><br>
 <h2> Training Pipeline</h2>
 <img src='https://github.com/Sairam-04/Crop-Recommendation-System-Using-Deep-Learning/blob/main/Readme%20Images/pipeline.png' >
