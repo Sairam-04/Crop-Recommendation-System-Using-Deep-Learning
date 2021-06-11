@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Crop Recommendation App</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/0212e5d715.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <nav class="navbar  navbar-dark bg-primary">
+            <span class="navbar-brand mb-0 h1">
+                <a href="index.html"><h2>Crop Recommendation Application</h2></a>
+            </span>
+        </nav>
+        <div class="container-fluid">
+            <form action="/predict" class="col-lg-12" method="POST">
+                <div class="row d-flex  justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="n-ratio">
+                                <h5>Enter ratio of Nitrogen content in soil</h5>
+                            </label>
+                            <input name="N" type="text" class="form-control" id="n-ratio"
+                                placeholder="Ratio of Nitrogen Content">
+                        </div>
+                        <div class="form-group">
+                            <label for="p-ratio">
+                                <h5>Enter the ratio of Phosphorous Content in soil</h5>
+                            </label>
+                            <input name="P" type="text" class="form-control" id="p-ratio"
+                                placeholder="Ratio of Phosphorous Content">
+                        </div>
+                        <div class="form-group">
+                            <label for="k-ratio">
+                                <h5>Enter the ratio of Potassium Content in soil</h5>
+                            </label>
+                            <input name="K" type="text" class="form-control" id="k-ratio"
+                                placeholder="Ratio of Potassium Content">
+                        </div>
+                        <div class="form-group">
+                            <label for="temp">
+                                <h5>Enter temperature in celsius</h5>
+                            </label>
+                            <input name="T" type="text" class="form-control" id="temp"
+                                placeholder="Temperature">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <label for="humid">
+                                <h5>Enter relative Humidity in %</h5>
+                            </label>
+                            <input name="H" type="text" class="form-control" id="humid"
+                                placeholder="Humidity">
+                        </div>
+                        <div class="form-group">
+                            <label for="ph">
+                                <h5>Enter ph value of th soil</h5>
+                            </label>
+                            <input name="PH" type="text" class="form-control" id="ph"
+                                placeholder="ph">
+                        </div>
+                        <div class="form-group">
+                            <label for="rainfall">
+                                <h5>Enter rainfall measure in mm</h5>
+                            </label>
+                            <input name="R" type="text" class="form-control" id="rainfall"
+                                placeholder="Rainfall in mm">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="predict d-flex align-items-center justify-content-center">
+
+                    <input type="submit" class="btn btn-primary" value="Predict">
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
